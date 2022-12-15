@@ -25,12 +25,12 @@ jobs:
         
       - name: Build
         run: 
-          npm run build 
+          ng build --prod
 
 
       - name: Test
         run: 
-          npm run test 
+          npm run test --prod
       
       
       
