@@ -28,9 +28,9 @@ jobs:
           ng build --prod
 
 
-      - name: Test
-        run: 
-          npm run test --prod
+      # - name: Test
+      #   run: 
+      #     npm run test --prod
       
       
       
