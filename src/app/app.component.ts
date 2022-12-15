@@ -7,6 +7,7 @@ import { Todo } from './Todo';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  [x: string]: any;
   todos:Todo[]=[];
   newTodo:string;
   Desription:string;
@@ -20,10 +21,12 @@ export class AppComponent {
       todo.Completed=false;
       this.todos.push(todo);
       this.newTodo="";
+      return true;
     }
     else
     {
       alert("Todo can not be empty!")
+      return false
     }
   }
 
