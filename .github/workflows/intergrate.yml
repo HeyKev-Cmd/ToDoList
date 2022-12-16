@@ -30,6 +30,6 @@ jobs:
 
       - name: Test
         run: 
-          npm test -- --coverage
+          npm test --coverage
       
       
