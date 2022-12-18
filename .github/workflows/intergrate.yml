@@ -30,6 +30,5 @@ jobs:
 
       - name: Test
         run: 
-          set CI=true && ng test  --watch=false --code-coverage
-      
+          set CI=true && npm test -- --no-watch 
       
