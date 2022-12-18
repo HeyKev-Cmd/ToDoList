@@ -1,5 +1,7 @@
 name: Angular GitHub CI
 on:
+  env:
+    CI: true
   push:
     branches:
       - main
