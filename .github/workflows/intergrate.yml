@@ -30,6 +30,6 @@ jobs:
 
       - name: Test
         run: 
-           set CI=true && npm test --coverage
+           set CI=true && npm test 
       
       
