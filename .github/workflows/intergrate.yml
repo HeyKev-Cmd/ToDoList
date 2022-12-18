@@ -25,11 +25,11 @@ jobs:
         
       - name: Build
         run: 
-          CI=true && npm run build
+          set CI=true && npm run build
 
 
       - name: Test
         run: 
-          CI=true && npm test 
+          set CI=true && npm test 
       
       
