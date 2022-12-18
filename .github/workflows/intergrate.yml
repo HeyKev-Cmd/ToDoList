@@ -6,7 +6,7 @@ on:
 
 jobs:
   ci:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -25,11 +25,11 @@ jobs:
         
       - name: Build
         run: 
-          set CI=true && npm run build
+          CI=true && npm run build
 
 
       - name: Test
         run: 
-           set CI=true && npm test 
+          CI=true && npm test 
       
       
