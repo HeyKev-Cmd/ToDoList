@@ -1,7 +1,5 @@
 name: Angular GitHub CI
 on:
-  env:
-    CI: true
   push:
     branches:
       - main
@@ -27,11 +25,11 @@ jobs:
         
       - name: Build
         run: 
-          npm run build
+          set CI=true && npm run build
 
 
       - name: Test
         run: 
-          npm test --coverage
+           set CI=true && npm test --coverage
       
       
